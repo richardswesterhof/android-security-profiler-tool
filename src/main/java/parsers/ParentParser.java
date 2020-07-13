@@ -56,6 +56,10 @@ public class ParentParser {
                 }
             }
         }
+		
+		//to add a new tool manually, in case the reflection doesn't pick it up
+		//replace [params...] by the actual parameters for the constructor
+		//tools.add(new YourClass([params...]));
 
         List<String> toolNames = new LinkedList<>();
         tools.forEach(tool -> toolNames.add(tool.getIniSectionName()));
