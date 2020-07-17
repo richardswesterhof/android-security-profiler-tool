@@ -1,0 +1,7 @@
+Requirements: 
+1. Make sure to use python 2 (and also pip for python 2)
+
+To install FileScan:
+1. Run "pip install -r requirements.txt" to install most dependencies.
+2. Navigate to FileScan/dependencies/pyfuzzy-0.1.0/
+3. Run "python setup.py install" to install the final dependency (not available from pip)

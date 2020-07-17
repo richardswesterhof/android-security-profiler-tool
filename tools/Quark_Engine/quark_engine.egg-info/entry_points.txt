@@ -1,0 +1,3 @@
+[console_scripts]
+quark = quark.cli:entry_point
+

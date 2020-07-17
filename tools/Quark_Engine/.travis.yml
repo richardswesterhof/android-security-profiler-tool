@@ -1,0 +1,17 @@
+# Set the build language to Python
+language: python
+
+python: 3.7
+
+# Installation
+install:
+  - pipenv install -e . --skip-lock
+  - pipenv install coveralls codecov pytest-cov --skip-lock
+
+# Run the unit test
+script:
+  - pytest --cov=./
+
+after_success:
+  - coveralls
+  - codecov
